@@ -1,0 +1,40 @@
+{
+  "name": "requirejs-bower",
+  "version": "0.0.0",
+  "description": "Import all your bower dependencies in to your require.js configuration",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "mocha -b -R spec -u tdd --recursive --check-leaks --compilers ls:LiveScript",
+    "test-watch": "mocha -w -u tdd --recursive --check-leaks --compilers ls:LiveScript",
+    "compile": "lsc -c -b -o build src",
+    "compile-watch": "lsc -c -b -w -o build src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/johngeorgewright/requirejs-bower.git"
+  },
+  "keywords": [
+    "requirejs",
+    "bower"
+  ],
+  "author": "John Wright <johngeorge.wright@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johngeorgewright/requirejs-bower/issues"
+  },
+  "homepage": "https://github.com/johngeorgewright/requirejs-bower",
+  "devDependencies": {
+    "LiveScript": "^1.2.0",
+    "chai": "^1.9.1",
+    "chai-as-promised": "^4.1.1",
+    "mocha": "^1.20.1",
+    "prelude-ls": "^1.1.1",
+    "proxyquire": "^1.0.1",
+    "sinon": "^1.10.2",
+    "sinon-chai": "^2.5.0"
+  },
+  "dependencies": {
+    "async": "^0.9.0",
+    "bluebird": "^2.2.1"
+  }
+}
